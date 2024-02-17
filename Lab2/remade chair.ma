@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: remade chair.ma
-//Last modified: Wed, Feb 14, 2024 11:27:51 PM
+//Last modified: Fri, Feb 16, 2024 12:25:11 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "3031CA15-4D0E-DA09-AD07-3292A9C8B243";
+fileInfo "UUID" "321474EB-4ADD-7BF4-8877-3BBD4DEC60D5";
 createNode transform -s -n "persp";
 	rename -uid "18FDF76C-474B-7844-F207-3E906010B22D";
 	setAttr ".v" no;
@@ -814,7 +814,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "426A6CD3-4BA1-B77E-2D11-2C9F15DF7F52";
+	rename -uid "9A981C2E-43F2-7AE6-16D1-9DBD76EA7370";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
