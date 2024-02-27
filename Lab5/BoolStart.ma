@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: BoolStart.ma
-//Last modified: Tue, Feb 27, 2024 01:04:45 AM
+//Last modified: Tue, Feb 27, 2024 01:31:14 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "3591E5C2-4785-1BC7-E4FD-42923925C040";
+fileInfo "UUID" "BDD169EA-48A1-D9C3-8E84-FA9A13E007C4";
 createNode transform -s -n "persp";
 	rename -uid "2F96C5CC-CF48-3364-978F-BF80661D753F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.337789086276802 11.349969433252429 8.2045695129024523 ;
-	setAttr ".r" -type "double3" -31.827641059471272 -664.0199487685129 -8.5272379468364734e-15 ;
+	setAttr ".t" -type "double3" 10.065964018372968 16.162546714117536 5.2271281093441377 ;
+	setAttr ".r" -type "double3" -48.62764105946129 -657.21994876834492 0 ;
 	setAttr ".rp" -type "double3" -8.8817841970012523e-16 1.3322676295501878e-15 -3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" -2.5643587145823656e-15 -2.3436049427325853e-15 1.8573693218308189e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -2309,7 +2309,7 @@ createNode polyTweak -n "polyTweak54";
 	setAttr ".uopa" yes;
 	setAttr ".tk[25]" -type "float3"  0.09349227 0.088998795 0.034488797;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "8D7EB183-4E45-B545-321B-4590BB548F28";
+	rename -uid "ED6FE4C1-4940-F9E3-F144-4FA552CA9D7E";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
