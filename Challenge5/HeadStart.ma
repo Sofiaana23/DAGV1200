@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: HeadStart.ma
-//Last modified: Fri, Mar 01, 2024 08:31:58 PM
+//Last modified: Fri, Mar 01, 2024 08:32:43 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "53E14F6E-4547-53A4-6705-CD98EE80A57E";
+fileInfo "UUID" "2745CDBE-4197-D3AB-A4FA-ABB8448AD5C4";
 createNode transform -s -n "persp";
 	rename -uid "82B7AE1D-3644-49B1-7693-27AD97E4AFCF";
 	setAttr ".v" no;
@@ -23295,7 +23295,7 @@ createNode polyAppendVertex -n "polyAppendVertex170";
 	setAttr -s 4 ".d[0:3]"  158 155 156 -1;
 	setAttr ".tx" 2;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "3CB33131-411D-6FF6-8133-8292C8818F22";
+	rename -uid "D77FA2DE-48EB-748C-5FB5-0AA650908B9D";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
