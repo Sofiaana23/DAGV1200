@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: HeadStart.ma
-//Last modified: Sat, Mar 02, 2024 12:42:41 AM
+//Last modified: Sat, Mar 02, 2024 12:52:50 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "D07109A4-411F-B4A1-93CD-82BA5B2E444E";
+fileInfo "UUID" "751E171B-4B5D-8049-1E2B-8B98A27939B3";
 createNode transform -s -n "persp";
 	rename -uid "82B7AE1D-3644-49B1-7693-27AD97E4AFCF";
 	setAttr ".v" no;
@@ -29980,20 +29980,20 @@ createNode mesh -n "polySurfaceShape2" -p "polySurface2";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "4DEB95CD-496B-87B1-FC8B-7397BB675042";
+	rename -uid "F41A3B42-46F0-EEB7-6989-05878D902AD7";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D817C160-4D79-CCEF-BB3C-2B884983CA11";
+	rename -uid "5D64D141-45BC-2919-09CE-5A85C0C4BE32";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8DCAD36C-40D5-B58F-5885-B997CEA61A02";
+	rename -uid "ADBD78D5-43B2-28A2-7093-FEA2018EE685";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4B3B9C42-4F0C-903E-22A2-3989F2ACDA13";
+	rename -uid "1FFC8015-4BAC-4E63-AE5E-B6B945A5AFDB";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "94D90CCD-B44A-46A2-BC89-44B17EB9ED60";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "BDDAA434-4D6D-3F93-404D-BA8F2728D979";
+	rename -uid "F69F3749-47D6-9BB0-DA04-2C8B0457A91E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4FA4A1F4-834A-2C6B-BFCC-33839800CB04";
 	setAttr ".g" yes;
@@ -30059,7 +30059,7 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 	setAttr ".output_mode" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "2397B557-4902-EC91-02C9-C08B4D08892D";
+	rename -uid "8E67AB9E-4516-8D0C-0A2F-D1B5F0692B83";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
