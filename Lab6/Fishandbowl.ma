@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Fishandbowl.ma
-//Last modified: Fri, Mar 08, 2024 11:54:49 PM
+//Last modified: Fri, Mar 08, 2024 11:58:59 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "2B12DE45-4F7E-8ABD-D777-2A8693627C91";
+fileInfo "UUID" "314D8119-4FC6-7337-A0CE-30A50B7D777B";
 createNode transform -s -n "persp";
 	rename -uid "C0CF6E65-42A1-0323-CE53-F1AA72E229BC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -73.73758916247219 17.05147462165359 0.42092829684962396 ;
-	setAttr ".r" -type "double3" -7.7999999999933571 -97.999999999999304 0 ;
+	setAttr ".t" -type "double3" 6.1603492938035771 124.37576510658408 10.097515251132782 ;
+	setAttr ".r" -type "double3" -95.399999999988481 -89.999999999999005 0 ;
 	setAttr ".rpt" -type "double3" -1.0173745263238401e-15 -5.0461658743276275e-16 -1.3336463271457038e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7862314B-491F-7562-1EBC-46A88BCF0535";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 70.178448911531206;
+	setAttr ".coi" 117.36948879730066;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -8871,7 +8871,7 @@ createNode shadingEngine -n "lambert2SG";
 createNode materialInfo -n "materialInfo3";
 	rename -uid "180ACECD-45DB-CD81-377C-FDA794C63408";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "76FDDDFA-47E6-E493-FF3D-B59CC2488878";
+	rename -uid "2AF163BA-4FEE-38FA-7873-63A267BFE936";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
