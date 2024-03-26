@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Starship.ma
-//Last modified: Tue, Mar 26, 2024 12:02:07 AM
+//Last modified: Tue, Mar 26, 2024 12:03:24 AM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "BE7A408B-4108-A86D-85AD-A1A76F0B02E6";
+fileInfo "UUID" "4215B011-4896-183B-FC00-7EADB1D28824";
 createNode transform -s -n "persp";
 	rename -uid "6FFFE6AA-4407-2101-791D-28AEBD80A64C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.5453193229154536 4.2258561700863897 -7.6575891046053934 ;
-	setAttr ".r" -type "double3" -10.199999999997889 -170.79999999998824 0 ;
+	setAttr ".t" -type "double3" -10.387340853945716 3.5625400682276034 -6.5302419042079753 ;
+	setAttr ".r" -type "double3" 3.600000000000056 -124.39999999998514 0 ;
 	setAttr ".rpt" -type "double3" 1.0772814322044929e-15 2.861602028657607e-16 1.9918326701872462e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "65FF4A2D-4F00-3E29-A229-A08301AC282D";
@@ -57,7 +57,7 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1000000000014;
-	setAttr ".ow" 13.512671228975467;
+	setAttr ".ow" 20.187839143811804;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -1146,7 +1146,7 @@ createNode polyBridgeEdge -n "polyBridgeEdge1";
 	setAttr ".sv2" 238;
 	setAttr ".d" 1;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "49CC224C-4C72-ED57-4742-949C2D7C44FB";
+	rename -uid "22B09B73-4413-6BF5-33E3-0B8B28EE3327";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
