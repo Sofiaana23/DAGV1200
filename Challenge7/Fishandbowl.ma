@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Fishandbowl.ma
-//Last modified: Fri, Mar 22, 2024 11:23:28 PM
+//Last modified: Fri, Mar 22, 2024 11:24:53 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "F79CEEC5-4681-C4AD-4850-C7A22934CFAB";
+fileInfo "UUID" "59FA3CFE-49AB-3B9B-6304-19A4800AE9F8";
 createNode transform -s -n "persp";
 	rename -uid "C0CF6E65-42A1-0323-CE53-F1AA72E229BC";
 	setAttr ".v" no;
@@ -9038,7 +9038,7 @@ createNode groupId -n "groupId3";
 	rename -uid "D3CCE84F-49B8-CDBE-A6CE-6DB20AEADBB5";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "11CC5EAB-4FD9-D46A-D90C-C39D2D0F704D";
+	rename -uid "4C216379-43D2-8C57-5E42-C0B95B79A0AE";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
