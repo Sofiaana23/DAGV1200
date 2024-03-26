@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Starship.ma
-//Last modified: Mon, Mar 25, 2024 06:13:14 PM
+//Last modified: Mon, Mar 25, 2024 06:15:11 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "C43EF36D-4079-F924-0D6B-CFA1224762F5";
+fileInfo "UUID" "C8F45E75-41EF-05AD-B6F3-A3999EA6FA59";
 createNode transform -s -n "persp";
 	rename -uid "6FFFE6AA-4407-2101-791D-28AEBD80A64C";
 	setAttr ".v" no;
@@ -56,7 +56,7 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1000000000014;
-	setAttr ".ow" 13.347770715811629;
+	setAttr ".ow" 9.1473397089071007;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -572,9 +572,6 @@ createNode polyMergeVert -n "polyMergeVert1";
 	setAttr ".ics" -type "componentList" 1 "vtx[*]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 	setAttr ".am" yes;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "8FDA68F7-41FC-81F0-8F7C-BD9159B6E74C";
-	setAttr ".sst" -type "string" "";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "B37ABDA1-4B6A-B8EC-5552-68847890D896";
 	setAttr ".b" -type "string" (
@@ -629,6 +626,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "3F55ED23-4CEE-F001-869D-F08DE5DC4A1E";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "5C42807E-4EB0-8D69-7EFD-CDA9515F7582";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
