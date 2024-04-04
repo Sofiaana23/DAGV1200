@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Starship.ma
-//Last modified: Wed, Apr 03, 2024 11:55:42 PM
+//Last modified: Wed, Apr 03, 2024 11:57:11 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,18 +13,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "8E1D0E25-4AC0-3F47-8D1B-71AA4AED54D5";
+fileInfo "UUID" "93DBCCF5-4D20-5271-052D-86A35EAF90A5";
 createNode transform -s -n "persp";
 	rename -uid "6FFFE6AA-4407-2101-791D-28AEBD80A64C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.7240531658596865 16.333004525223288 8.8262563280237103 ;
+	setAttr ".t" -type "double3" -17.02508967191239 30.995785525178977 19.45109854248485 ;
 	setAttr ".r" -type "double3" -47.399999999678997 -1117.9999999999745 2.0180909124050877e-15 ;
 	setAttr ".rpt" -type "double3" -1.3031000502664954e-14 8.6617037789007117e-16 3.2622227871074138e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "65FF4A2D-4F00-3E29-A229-A08301AC282D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 20.77826306956085;
+	setAttr ".coi" 40.697892227998437;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -383,7 +383,7 @@ createNode mesh -n "starship" -p "Combined_starship";
 	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.11277057230472565 0.2259305939078331 ;
+	setAttr ".pv" -type "double2" 0.91823897510766983 0.49903642293065786 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -25878,7 +25878,7 @@ createNode groupParts -n "groupParts4";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[822:827]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "A3D55FE9-4C0F-09A2-3AAC-A2927962159A";
+	rename -uid "5B0A2E9C-4417-B3D9-9A1E-4986A1E39842";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
