@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Fishandbowl.ma
-//Last modified: Fri, Apr 12, 2024 05:53:22 PM
+//Last modified: Fri, Apr 12, 2024 06:51:30 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "0B24F643-4EAA-CB58-B8F3-01B063390719";
+fileInfo "UUID" "693F8280-49DC-B121-37F1-60BF203D2808";
 createNode transform -s -n "persp";
 	rename -uid "C0CF6E65-42A1-0323-CE53-F1AA72E229BC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 44.812578374767931 27.588732494221915 3.0193836124734652 ;
-	setAttr ".r" -type "double3" 343.79999999922762 803.5999999996601 -1.4266552205812092e-14 ;
+	setAttr ".t" -type "double3" 5.8927013698170834 17.58359423620837 1.7029007974630606 ;
+	setAttr ".r" -type "double3" 307.1999999991321 782.79999999964798 6.9581472440523502e-15 ;
 	setAttr ".rpt" -type "double3" -3.1347719948055687e-14 1.0665279777539315e-14 -1.551843674266659e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7862314B-491F-7562-1EBC-46A88BCF0535";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 42.736491663226694;
+	setAttr ".coi" 2.6337425198383526;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3272,6 +3272,7 @@ createNode mesh -n "sand2Shape" -p "sand2";
 	setAttr ".iog[0].og[2].gcl" -type "componentList" 2 "f[400:1239]" "f[2271]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.53868833184242249 0.43234089016914368 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 2459 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.45225483 0.35455084 0.46089816
@@ -10431,7 +10432,7 @@ createNode groupId -n "groupId6";
 	rename -uid "B2A209E2-4750-DB4B-4885-7B8097858FBD";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "9905C50A-4A73-8DBD-CF20-E18B656DF444";
+	rename -uid "9673BCD2-4499-ECE2-3345-7E8EF6C1BAB5";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
