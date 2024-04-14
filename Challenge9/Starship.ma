@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Starship.ma
-//Last modified: Sat, Apr 13, 2024 11:35:51 PM
+//Last modified: Sun, Apr 14, 2024 12:14:28 AM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -14,18 +14,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "47879C31-4A93-A0AB-572B-D38F63B75B89";
+fileInfo "UUID" "853F0F80-483F-F2A7-42AF-E2B3A0D4C581";
 createNode transform -s -n "persp";
 	rename -uid "6FFFE6AA-4407-2101-791D-28AEBD80A64C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.0975414911907 7.2983846767506177 13.321659507159358 ;
+	setAttr ".t" -type "double3" 36.237703518401183 11.501569072167705 29.193623572300737 ;
 	setAttr ".r" -type "double3" -10.200000000001337 -3912.7999999997282 -1.1702830919797837e-15 ;
 	setAttr ".rpt" -type "double3" -1.3031000502664954e-14 8.6617037789007117e-16 3.2622227871074138e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "65FF4A2D-4F00-3E29-A229-A08301AC282D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 23.711986931441391;
+	setAttr ".coi" 47.447427872490792;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -7773,7 +7773,11 @@ createNode transform -n "ambientLight1";
 createNode transform -n "directionalLight1";
 	rename -uid "D0886964-4CFA-4F42-325F-33A90D9D7C31";
 	setAttr ".t" -type "double3" 10.335898464955402 5.5678645038671153 1.7907896710214284 ;
-	setAttr ".r" -type "double3" -29.999999999999996 70 0 ;
+	setAttr ".r" -type "double3" -29.999999999999986 70 -4.6496598863111672e-15 ;
+	setAttr ".s" -type "double3" 1 1 0.99999999999999989 ;
+	setAttr ".rp" -type "double3" -2.2204460492503131e-16 -8.8817841970012523e-16 0 ;
+	setAttr ".rpt" -type "double3" 5.6340823079062928e-16 1.1899334514669958e-16 3.6054113193567566e-16 ;
+	setAttr ".sp" -type "double3" -2.2204460492503131e-16 -8.8817841970012523e-16 0 ;
 createNode directionalLight -n "primarylight" -p "directionalLight1";
 	rename -uid "34DBC8F3-42F1-F5B9-9DA8-C39579D80E5A";
 	setAttr -k off ".v";
@@ -8081,10 +8085,10 @@ createNode animCurveTU -n "spotLight1_scaleZ";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 4.0710490890067952;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "F8B2ABCA-4DE1-BD96-748E-BF8859B77809";
+	rename -uid "37B0E7CF-4B04-0C84-8F17-A997E28F1E30";
 	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "532B03AC-48EE-5FE9-4290-51A21F5DB598";
+	rename -uid "037204C9-4826-09EC-8AFA-91A45E05A9C0";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -576.69572388334984 -744.31565031651621 ;
 	setAttr ".tgi[0].vh" -type "double2" 200.31376905058991 331.87478310999313 ;
