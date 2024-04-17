@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Fishandbowl.ma
-//Last modified: Tue, Apr 16, 2024 10:54:18 PM
+//Last modified: Tue, Apr 16, 2024 10:57:07 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "9349C459-4109-A324-5E97-BCA889BFC9DD";
+fileInfo "UUID" "68E77C54-4602-B0E3-13EA-ABBC544574CE";
 createNode transform -s -n "persp";
 	rename -uid "C0CF6E65-42A1-0323-CE53-F1AA72E229BC";
 	setAttr ".v" no;
@@ -9418,7 +9418,6 @@ createNode aiStandardSurface -n "bowlinside";
 createNode shadingEngine -n "aiStandardSurface2SG";
 	rename -uid "6A43364B-41E2-DB4E-C947-EE87D76E048A";
 	setAttr ".ihi" 0;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo12";
 	rename -uid "295EAE6C-462A-A080-D1E7-20B6E26E4805";
@@ -9497,6 +9496,7 @@ createNode aiStandardSurface -n "fish1";
 createNode shadingEngine -n "aiStandardSurface4SG";
 	rename -uid "129A4378-4FEC-05BA-9150-4981D5CDCBA6";
 	setAttr ".ihi" 0;
+	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo14";
 	rename -uid "42AB38A3-43A2-3800-448E-0BA3F4FF8C9E";
@@ -9522,14 +9522,14 @@ createNode place2dTexture -n "place2dTexture15";
 	rename -uid "675BCB91-4B4C-921D-13CE-C486E10BF96F";
 createNode file -n "file16";
 	rename -uid "2C3AA47F-42B6-4165-B91E-9EB0A04A7754";
-	setAttr ".ftn" -type "string" "C:/Users/anaso/Documents/3D CLASS/textures/fishtextures/Fixedfish_blinn2_Normal.png";
+	setAttr ".ftn" -type "string" "C:/Users/anaso/Documents/Maya Default/Maya_Default//sourceimages/3dPaintTextures/fishtextures/Fixedfish_blinn2_Normal.png";
 	setAttr ".cs" -type "string" "Raw";
 createNode place2dTexture -n "place2dTexture16";
 	rename -uid "8A0E83B8-42D0-A1F9-4458-979D78DF2E28";
 createNode bump2d -n "bump2d4";
 	rename -uid "55572E1B-451C-6867-36A4-9BAB6975A4E1";
 	setAttr ".bi" 1;
-	setAttr ".vc1" -type "float3" 0 3.9999999e-05 0 ;
+	setAttr ".vc1" -type "float3" 0 5.9999998e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode aiStandardSurface -n "sand";
 	rename -uid "C7BBB431-4610-3854-F583-13B6D07896E1";
@@ -9587,10 +9587,10 @@ createNode polyExtrudeEdge -n "polyExtrudeEdge1";
 	setAttr ".cbn" -type "double3" -30.303053797982546 0 -30.303053797982546 ;
 	setAttr ".cbx" -type "double3" 30.303053797982546 0 -30.303053797982546 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "686B0BFE-4507-74A7-ADDA-3DAA9CA16AAC";
+	rename -uid "5052DD8D-4186-C9FD-98DB-FDBB7788CC3E";
 	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "6D0B3CD9-49A2-FAC2-C6CC-DDA54A67F82E";
+	rename -uid "E2B876DA-45B5-9291-B4E7-62BE4B916663";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -3870.4543608649051 -2717.4598623126903 ;
 	setAttr ".tgi[0].vh" -type "double2" 89.545639135094461 139.68299483016656 ;
